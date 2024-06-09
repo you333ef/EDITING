@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./leon.css">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+
+    
+
+
+    <title>Edit photos</title>
+</head>
+<body id="body">
+    <div class="container  Big" style="width: 85vw; height: 95vh; margin: auto; ">
+<div class="row">
+    <div class="col-lg-8   images">
+        <canvas id="canvas"></canvas>
+<img  id="img"  src=""   >
+<div class="upload">
+    <label for="upload"id="potn"  class="btn btn-dark ">Upload Photo</label>
+    <input type="file" id="upload" style="margin-right: 40px; display: none;">
+
+</div>
+    </div>
+    <div class="col-lg-4       manegment">
+<ul class="row">
+<li class="col-12 LL">
+<label for="Saturate">Saturate</label>
+<input type="range" id="Saturate" min="0" max="200" value="100">
+
+</li>
+<li class="col-12 LL" >
+    <label for="Contrast">Contrast</label>
+    <input type="range" id="Contrast" min="0" max="200" value="100">
+    
+
+</li>
+<li class="col-12 LL">
+    <label for="Brightness">Brightness</label>
+    <input type="range" id="Brightness" min="0" max="200" value="100">
+    
+
+</li>
+<li class="col-12 LL">
+    <label for="Sepia  ">Sepia</label>
+    <input type="range" id="Sepia" min="0" max="200" value="0">
+    
+
+</li>
+<li class="col-12 LL">
+
+    <label for="GrayScale">GrayScale</label>
+    <input type="range" id="GrayScale" min="0" step="0.1" max="200" value="100">
+    
+
+</li>
+<li class="col-12 LL">
+
+    <label for="Blur">Blur</label>
+    <input type="range" id="Blur" step="0.1" min="0" max="10" value="0">
+    
+
+</li>
+<li class="col-12 LL">
+<label for="Hue Rotate">HueRotate</label>
+<input type="range" id="HueRotate" min="0" max="350" value="0">
+</li>
+<div class="row hh" style="display: flex; flex-direction: row;gap: 90px; margin-top: 10px;">
+    <div class="col-2"><button id="potn3" type="button" class="btn btn-dark " onclick=" ResetData()">Reset</button></div>
+    <a download="true" href=""  class="col-2"><button id="potn2" type="button" class="btn btn-dark ">Download</button></a>
+    </div>
+</ul>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script> 
+    <script src="./bootstrap-4.0.0-dist (1)/js/popper.min.js"></script> 
+   <script src="./json.js"></script> 
+</body>
+</html>
